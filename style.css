@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(42, 44, 43);
+}
+.navbar-brand:hover,.item:hover{
+    color: rgb(102, 247, 211);
+}
+.name{
+    color: rgb(133, 228, 228);
+}
+.text{
+    margin-left: 8%;
+    margin-top: 10%;
+    text-align: center;
+}
+.text span{
+    color: aqua;
+}
+.text{
+    color: white;
+}
+.image{
+    border-radius: 50%;
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 22vw;
+    box-shadow: 0 10px 8px 0 rgb(26, 216, 153), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: float 4s ease-in-out infinite;
+    
+}
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+.custom-shape-divider-bottom-1678451874 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678451998 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678451998 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 136px;
+}
+
+.custom-shape-divider-bottom-1678451998 .shape-fill {
+    fill: #41FCCB;
+}
+
+  .typing-demo {
+    width: 27ch;
+    animation: typing 2s infinite, blink .5s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid aqua;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    0%{
+      width: 0;
+    }
+    
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  .social:hover{
+    filter: contrast();
+  }

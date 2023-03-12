@@ -100,7 +100,7 @@ body{
     }
   }
   .social:hover{
-    filter: contrast();
+    filter: contrast(0.4);
   }
 
 .content1 ul li{
@@ -108,7 +108,7 @@ body{
     margin: 10px 0;
 }
 .content1 li span{
-    color: rgb(117, 254, 254);
+    color: rgb(90, 244, 244);
 
 }
 .content1 li {
@@ -119,4 +119,13 @@ body{
 }
 .content1.act{
     display: block;
+}
+.active-link{
+    color: aqua;
+}
+.table{
+    border: none;
+}
+.full{
+    justify-content: space-between;
 }

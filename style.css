@@ -11,13 +11,12 @@ body{
     margin-left: 8%;
     margin-top: 10%;
     text-align: center;
+    color: white;
 }
 .text span{
     color: aqua;
 }
-.text{
-    color: white;
-}
+
 .image{
     border-radius: 50%;
     width: 250px;
@@ -27,6 +26,14 @@ body{
     animation: float 4s ease-in-out infinite;
     
 }
+.images{
+    border-radius: 50%;
+    width: 250px;
+    margin-top: 180px;
+    margin-left: 15vw;
+    box-shadow: 0 10px 8px 0 rgb(26, 216, 153), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: float 4s ease-in-out infinite;
+}    
 @keyframes float {
     0%{
         transform: translateY(0);
@@ -50,7 +57,7 @@ body{
 }
 
 .custom-shape-divider-bottom-1678451998 {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -95,3 +102,21 @@ body{
   .social:hover{
     filter: contrast();
   }
+
+.content1 ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.content1 li span{
+    color: rgb(117, 254, 254);
+
+}
+.content1 li {
+    color: white;
+}
+.content1{
+    display: none;
+}
+.content1.act{
+    display: block;
+}

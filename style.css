@@ -6,18 +6,27 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    font-family: "Protest Riot", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
-
 
 body{
     background-color: rgb(42, 44, 43);
     
 }
-.logo-img:hover {
- color: aqua;
-}
-.navbar-brand:hover,.item:hover{
-    color: rgb(102, 247, 211);
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
+.logo-img:hover{
+    filter: brightness(0) saturate(100%) invert(54%) sepia(55%) saturate(6515%) hue-rotate(347deg) brightness(106%) contrast(101%);}
+.item:hover{
+    color:  #ff5722;
 }
 .name{
     color: rgb(133, 228, 228);
@@ -29,26 +38,26 @@ body{
     color: white;
 }
 .text span{
-    color: aqua;
+    color:  #ff5722;
 }
 .button{
-    background-color: aqua;;
+    background-color:  #ff5722;;
 }
 .image{
     border-radius: 50%;
-    width: 60%;
+    width: 80%;
     margin-top: 100px;
-    margin-left: 22vw;
-    box-shadow: 0 10px 8px 0 rgb(26, 216, 153), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20vw;
+    box-shadow: 0 10px 8px 0 #ff5722, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation: float 4s ease-in-out infinite;
     
 }
 .images{
-    border-radius: 50%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     width: 50%;
     margin-top: 180px;
     margin-left: 15vw;
-    box-shadow: 0 10px 8px 0 rgb(26, 216, 153), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 10px 8px 0 #ff5722, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation: float 4s ease-in-out infinite;
 }    
 @keyframes float {
@@ -63,14 +72,29 @@ body{
     }
     
 }
+@keyframes floati {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+.icon{
+    animation: floati 4s ease-in-out infinite; 
+}
   .typing-demo {
     width: 25ch;
     animation: typing 2s infinite, blink .5s infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid aqua;
+    border-right: 2px solid #ff5722;
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.6em;
   }
   
   @keyframes typing {
@@ -94,7 +118,7 @@ body{
     margin: 10px 0;
 }
 .content1 li span{
-    color: rgb(90, 244, 244);
+    color: #ff5722;
 
 }
 .content1 li {
@@ -107,7 +131,7 @@ body{
     display: block;
 }
 .active-link{
-    color: aqua;
+    color: #ff5722;
 }
 .table{
     border: none;
@@ -123,7 +147,7 @@ body{
     margin-top: 13%;
 }
 span{
-    color: aqua;
+    color: #ff5722;
 }
 #about{
     margin-top: 25%;
@@ -154,7 +178,7 @@ span{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: aqua;
+    color: #ff5722;
     background-color: rgb(49, 50, 49);
     border-radius: 0.8rem;
     margin: .7rem 0;
@@ -190,3 +214,33 @@ span{
     }
 }
 
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.Container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border-radius: 6px;
+    background: #ff5722;
+}
+.Text-box{
+    padding:20px 30px ;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left{
+    left: 0;
+}
+.right{
+    left: 50%;
+}
+.Container img{
+    position: absolute;
+    width: 40px;
+}
